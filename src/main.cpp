@@ -1,13 +1,15 @@
 #include <Arduino.h>
 
+const int ledPin = 15;
+
 void setup (){
-  pinMode(LED_BUILTIN,OUTPUT);
+  pinMode(ledPin,OUTPUT);
 }
 
 
 void loop(){
-  digitalWrite(LED_BUILTIN,HIGH);
+  digitalWrite(ledPin,HIGH);
   delay(1000);
-  digitalWrite(LED_BUILTIN,LOW);
+  digitalWrite(ledPin,LOW);
   delay(1000);
 }
